@@ -43,7 +43,7 @@ const Footer = () => {
                     </div>
 
                     <div className={ style.contactForm }>
-                        <form>
+                        <div>
                             <h2>Send Message</h2>
                             <div className={ style.inputBox }>
                                 <input type="text" name="" required="required" />
@@ -60,7 +60,7 @@ const Footer = () => {
                             <div className={ style.inputBox }>
                                 <input type="submit" value="Send" />
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </section>

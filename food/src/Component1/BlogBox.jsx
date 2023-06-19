@@ -6,7 +6,7 @@ const BlogBox = ({ data }) => {
         <>
             <div className="card" style={ { width: "20rem" } }>
                 <img
-                    src={ `https://blog-back-12xs.onrender.com/public/${data.fileprth}` }
+                    src={ `http://localhost:1234/public/${data.Filepath}` }
                     className="d-block mx-lg-auto img-fluid"
                     lt="Bootstrap Themes"
                     loading="lazy" />
@@ -14,7 +14,7 @@ const BlogBox = ({ data }) => {
                     <h5 className="card-title">{ data.titel }</h5>
                     <p className="card-text">{ data.type }</p>
                     <p className="card-text">{ data.Description }</p>
-                    <a className="btn btn-primary">Go To Blog</a>
+                    <a className="btn btn-primary">Add blog</a>
                 </div>
             </div>
         </>

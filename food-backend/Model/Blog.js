@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const blogsSchema = new mongoose.Schema({
-    name: {
+    titel: {
         type: String,
         required: true,
     },
@@ -19,4 +19,4 @@ const blogsSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Blogs', blogsSchema);
+module.exports = mongoose.model('food-tables', blogsSchema);

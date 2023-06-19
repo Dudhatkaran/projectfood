@@ -1,27 +1,27 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import style from './Dashboard.module.css'
 import img1 from "../img/restaurant.jpg"
-import BlogBox from '../BlogBox';
+// import BlogBox from '../BlogBox';
 
 
 
 const Dashboard = () => {
-    const [blogDatas, setBlogDatas] = useState([]);
+    // const [blogDatas, setBlogDatas] = useState([]);
 
-    useEffect(() => {
-        const fetchApi = async () => {
-            fetch(`https://blog-back-12xs.onrender.com/api/getAllBlogs`, {
-                method: "GET",
-                headers: { "Content-Type": "application/json" }
-            }).then((res) => res.json())
-                .then((data) => {
-                    setBlogDatas(data.dataAdd)
-                })
-                .catch((error) => console.log('error::: ', error))
-        }
-        fetchApi();
-    }, [])
+    // useEffect(() => {
+    //     const fetchApi = async () => {
+    //         fetch(`http://localhost:1234/api/getAllBlogs`, {
+    //             method: "GET",
+    //             headers: { "Content-Type": "application/json" }
+    //         }).then((res) => res.json())
+    //             .then((data) => {
+    //                 setBlogDatas(data.dataAdd)
+    //             })
+    //             .catch((error) => console.log('error::: ', error))
+    //     }
+    //     fetchApi();
+    // }, [])
     return (
         <>
             <section className={ style.hero }>
@@ -34,7 +34,7 @@ const Dashboard = () => {
                 </div>
                 <img src={ img1 } alt="" />
             </section>
-            <div style={ { display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" } }>
+            {/* <div style={ { display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" } }>
                 {
                     blogDatas.slice(0, 22).map((data, index) => (
                         <div style={ { margin: "10px 0" } } key={ index }>
@@ -42,7 +42,7 @@ const Dashboard = () => {
                         </div>
                     ))
                 }
-            </div>
+            </div> */}
         </>
     )
 }

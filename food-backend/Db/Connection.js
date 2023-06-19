@@ -2,7 +2,7 @@ const mongooes = require('mongoose');
 
 mongooes.set('strictQuery', false);
 
-mongooes.connect("mongodb+srv://karanvd2002:food123456@food.p0owlk0.mongodb.net/food?retryWrites=true&w=majority", {
+mongooes.connect("mongodb+srv://karanvd2002:karan1234@food.p0owlk0.mongodb.net/food?retryWrites=true&w=majority", {
     useNewUrlParser: true,
 }).then(() => {
     console.log('DB connect Done');
